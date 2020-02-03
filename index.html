@@ -4,15 +4,23 @@
     <title>Zhihao Guo's Portfolio Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- favicon-->
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">    
+    
+    <meta property="og:title" content="Zhihao Guo">
+    <meta property="og:description" content="I am a junior at Boston College, currently studying Economics and Computer Science. My goal in 2020 is to learn HTML, CSS, Javascript, etc. In doing so I hope to become a better programmer in general. Proud supporter of Manchester United. GGMU.">
+    <meta property="og:image" content="https://i.imgur.com/lPxEmTp.jpg">
+    <meta property="og:url" content="https://www.myperfectresume.com/how-to-write-a-resume">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">    
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
-<body>
+<body style="background-color: azure;">
     <div class="container">
         <nav>
             <ul>
@@ -28,13 +36,17 @@
             </ul>
         </nav>
         <section id="about">
-            <h1>Zhihao Guo</h1>
+            <h1 class="title animated infinite pulse delay-1s slow">Zhihao Guo</h1>
             <div class="row">
                 <div class="col-6">
-                    <img src="Assets/profile.gif" alt="my profile pic" width="150" height="150"/>
+                    <img class="profile" src="Assets/logo.jpg" alt="my profile pic"/>
                     <p>
+                        <i class="fas fa-user-graduate"></i>
                         <strong>Student at Boston College</strong><br>
+                        <i class="far fa-paper-plane"></i>
                         guozv@bc.edu <br>
+                        <a href="https://twitter.com/zjackerooo" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/bcwebcourse/portfolio-zjackeroo" target="_blank"><i class="fab fa-github"></i></a>
                     </p>
                 </div>
                 <div class="col-6">
@@ -47,7 +59,7 @@
             </div >
         </section>
         <section id="news">
-            <h1 class="title">News</h1>
+            <h1 class="title animated infinite pulse delay-2s slow">News</h1>
             <div>
                 <div class="row">
                     <div class="col-8">
@@ -98,12 +110,12 @@
             </div>
         </section>
         <section id="projects">
-            <h1 class="title">Projects</h1>
+            <h1 class="title animated infinite pulse delay-3s slow">Projects</h1>
             <div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-8">
                         <div class="project-title">
-                            <a href="project_1.html"><strong>Project 2020</strong></a>
+                            <a href="project_1.html"><i class="fas fa-flag-checkered"></i><strong> Project Mercedes</strong></a>
                         </div>
                         <div class="project-authors">
                             Lewis Hamilton, Zjackeroo
@@ -111,16 +123,20 @@
                         <div>
                             <em>Jan 1, 2020</em>
                         </div>
+                        <div class="project-tags">
+                            <span class="tag one">tag 1</span>
+                            <span class="tag two">tag 2</span>
+                        </div>
                     </div> 
-                    <div class="col-6">
-                        <img src="Assets/project_1.jpg" width="200" height="200">
+                    <div class="col-4">
+                        <img src="Assets/mercedes.jpg" width="100%">
                     </div>
                 </div>
                 <p></p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-8">
                         <div class="project-title">
-                            <a href="project_2.html"><strong>Project 2019</strong></a>
+                            <a href="project_2.html"><i class="fas fa-flag-checkered"></i><strong> Project Red Bull</strong></a>
                         </div>
                         <div class="project-authors">
                             Max Verstappen, Zjackeroo
@@ -128,16 +144,20 @@
                         <div>
                             <em>Jan 1, 2019</em>
                         </div>
-                    </div> 
-                    <div class="col-6">
-                        <img src="Assets/project_2.jpg" width="200" height="200">
+                        <div class="project-tags">
+                            <span class="tag two">tag 2</span>
+                            <span class="tag three">tag 3</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="Assets/red bull.jpg" width="100%">
                     </div>
                 </div>
                 <p></p>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-8">
                         <div class="project-title">
-                            <a href="project_3.html"><strong>Project 2018</strong></a>
+                            <a href="project_3.html"><i class="fas fa-flag-checkered"></i><strong> Project Ferrari</strong></a>
                         </div>
                         <div class="project-authors">
                             Sebastian Vettel, Zjackeroo
@@ -145,9 +165,13 @@
                         <div>
                             <em>Jan 1, 2018</em>
                         </div>
+                        <div class="project-tags">
+                            <span class="tag one">tag 1</span>
+                            <span class="tag three">tag 3</span>
+                        </div>
                     </div> 
-                    <div class="col-6">
-                        <img src="Assets/project_3.jpg" width="200" height="200">
+                    <div class="col-4">
+                        <img src="Assets/ferrari.jpg" width="100%">
                     </div>
                 </div>
         </section>

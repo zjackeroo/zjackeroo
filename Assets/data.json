@@ -1,0 +1,87 @@
+{   
+    "about":{
+        "name":"Zhihao Guo",
+        "title":"Student at Boston College",
+        "photo":["Assets/logo.jpg"],
+        "desc":"I am a junior at Boston College, currently studying Economics and Computer Science. My goal in 2020 is to learn HTML, CSS, Javascript, etc. In doing so I hope to become a better programmer in general. Proud supporter of Manchester United. GGMU.",
+        "email": "guozv@bc.edu",
+        "address": "404 Nowhere Street, Chestnut Hill, MA 02467",
+        "resume": "https://www.myperfectresume.com/how-to-write-a-resume",
+        "twitter":"https://twitter.com/zjackerooo",
+        "linkedin":"https://www.linkedin.com",
+        "github":"https://github.com/bcwebcourse/portfolio-zjackeroo"
+    },
+    "news":[
+        {
+            "title":"Will be a Senior",
+            "date": "Sep 1, 2020"
+        },
+        {
+            "title":"Is a Junior",
+            "date": "Sep 1, 2019"
+        },
+        {
+            "title":"Is a Sophomore",
+            "date": "Sep 1, 2018"
+        },
+        {
+            "title":"Is a Freshman",
+            "date": "Sep 1, 2017"
+        },
+        {
+            "title":"这个人很懒，什么都没有留下。。。",
+            "date": "Since Birth..."
+        }
+    ],
+    "projects":[
+        {
+            "id":"Project 1",
+            "title": "F1 2020",
+            "authors": "Lewis Hamilton, Zjackeroo",
+            "source": "Official Formula One Website",
+            "teaser": "Assets/mercedes.jpg",
+            "photo": "Assets/project_1.jpg",
+            "tags":["tag one", "tag two"],
+            "materials": [
+                { 
+                    "label": "Link",
+                    "path": "https://www.formula1.com/en/teams/Mercedes.html"
+                }
+            ],
+            "desc": "Mercedes’ modern F1 revival started with the creation of a works squad for 2010 - the platform for a meteoric rise up the Grand Prix order. The team generated huge excitement from the off with the sensational return of Michael Schumacher, but headlines soon followed on track: three podiums in their debut season, all via Nico Rosberg - who then claimed a breakthrough pole/victory double at China in 2012. The following season he was paired with Lewis Hamilton, the duo going on to stage some epic title battles as the Silver Arrows swept all before them to become one of the most dominant forces of the modern F1 era. And with Hamilton now partnered by steely Finn Valtteri Bottas, Mercedes remain very much the team to beat…"
+        },
+        {
+            "id":"Project 2",
+            "title": "F1 2019",
+            "authors": "Max Verstappen, Zjackeroo",
+            "source": "Official Formula One Website",
+            "teaser": "Assets/red bull.jpg",
+            "photo": "Assets/project_2.jpg",
+            "tags":["tag two", "tag three"],
+            "materials": [
+                { 
+                    "label": "Link",
+                    "path": "https://www.formula1.com/en/teams/Red-Bull-Racing.html"
+                }
+            ],
+            "desc": "Red Bull were no strangers to F1 - as sponsors - prior to formally entering as a works team in 2004. Nonetheless, the scale of their success over the following decade was staggering. After a first podium in 2006, the team hit their stride in 2009, claiming six victories and second in the constructors' standings. Over the next four seasons they were a tour de force, claiming consecutive title doubles between 2010 and 2013, with Sebastian Vettel emerging as the sport's youngest quadruple champion. Now their hopes of recapturing that glory lie with an equally exciting talent – one named Max Verstappen…"
+        },
+        {
+            "id":"Project 3",
+            "title": "F1 2018",
+            "authors": "Sebastian Vettel, Zjackeroo",
+            "source": "Official Formula One Website",
+            "teaser": "Assets/ferrari.jpg",
+            "photo": "Assets/project_3.jpg",
+            "tags":["tag one", "tag three"],
+            "materials": [
+                { 
+                    "label": "Link",
+                    "path": "https://www.formula1.com/en/teams/Ferrari.html"
+                }
+            ],
+            "desc": "For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every season since the world championship began, the Prancing Horse has grown from the humble dream of founder Enzo Ferrari to become one of the most iconic and recognised brands in the world. Success came quickly through the likes of Alberto Ascari and John Surtees, and continued – in amongst leaner times – with Niki Lauda in the 1970s and then Michael Schumacher in the 2000s, when Ferrari claimed a then unprecedented five consecutive title doubles, securing their status as the most successful and decorated team in F1 history..."
+        }
+
+    ]
+}
