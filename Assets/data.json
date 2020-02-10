@@ -43,7 +43,7 @@
             "photo": "Assets/project_1.jpg",
             "tags":["tag one", "tag two"],
             "materials": [
-                { 
+                {
                     "label": "Link",
                     "path": "https://www.formula1.com/en/teams/Mercedes.html"
                 }
