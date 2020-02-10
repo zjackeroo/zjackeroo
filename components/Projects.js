@@ -66,7 +66,7 @@ function renderProjectItems(projects){
     `).join('');
 }
 
-export function renderProjectDetail(project){
+export function renderProjectDetail(d){
     return `
     <section>
         <h1 class="title">${d.title}</h1>

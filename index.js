@@ -1,5 +1,5 @@
-import MainPage from './Main/MainPage.js';
-import ProjectPage from './Project/ProjectPage.js';
+import MainPage from './components/MainPage.js';
+import ProjectPage from './components/ProjectPage.js';
 
 fetch('Assets/data.json')
 .then(resp=>resp.json())
