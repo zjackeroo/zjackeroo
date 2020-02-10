@@ -1,7 +1,7 @@
 
 let data;
 
-let photos = ['logo.jpg', 'profile.gif']
+let photos = ['logo.jpg']
 fetch('Assets/data.json')
 .then(resp=>resp.json())
 .then(d=>{
@@ -51,7 +51,7 @@ function renderAbout(about){
         <h1 class="title animated infinite pulse delay-1s slow">${about.name}</h1>
         <div class="row">
             <div class="col-6">
-                <img class="profile-img" src="assets/${_.sample(photos)}"/>
+                <img class="profile-img" src="Assets/${_.sample(photos)}"/>
                 <p>
                     <strong>${about.title}</strong><br>
                     ${about.email} <br>
@@ -71,6 +71,21 @@ function renderAbout(about){
         </div >    
     </section>`
 }
+
+/// needs fix... ///
+function multipleProfile(){
+    let profilePic = document.querySelector('.profile-img');
+    profilePic.addEventListener("mousedown", function(event) {
+        let x = event.pageX - parent.offsetLeft;
+        let y = event.pageY - parent.offsetTop;
+        console.log(x, y);
+        if (x>10 && y>10){
+            about.photos = 'profile.gif';
+            document.querySelector('.profile-img').innerHTML = renderAbout(about);
+        }
+      });
+}
+/// end fix... /// 
 
 function renderMaterialIcon(type){
     switch (type){
