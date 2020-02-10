@@ -1,7 +1,28 @@
+import MainPage from './Main/MainPage.js';
+import ProjectPage from './Project/ProjectPage.js';
 
+fetch('Assets/data.json')
+.then(resp=>resp.json())
+.then(data=>{
+    // console.log('loaded:',d);
+    // determine what page to render
+    let params = new URLSearchParams(window.location.search);
+    if (params.get('project')==null){
+        MainPage(data);
+    }else{
+        let project = data.projects.find(d=>d.id===params.get('project'));
+        ProjectPage(project);
+    }
+});
+
+
+/////////////////////////////
+
+/*
 let data;
 
 let photos = ['logo.jpg']
+
 fetch('Assets/data.json')
 .then(resp=>resp.json())
 .then(d=>{
@@ -16,25 +37,9 @@ fetch('Assets/data.json')
         renderProjectPage(project);
     }
 });
+*/
 
-function renderNavbar(page, items){
-    return `
-    <nav>
-        <ul>
-           ${page==='project'? (
-                `<li>
-                    <a href=".">Go Back</a>
-                </li>`
-           ):(
-                items.map(d=>
-                `<li>
-                    <a href="#${d}">${d.toUpperCase()}</a>
-                </li>
-                `).join('')
-            )}
-        </ul>
-    </nav>`
-}
+/*
 function renderMainPage(data){
 
     document.querySelector('.container').innerHTML = `
@@ -45,6 +50,9 @@ function renderMainPage(data){
     `
     addInteractions();
 }
+*/
+
+/*
 function renderAbout(about){
     return `
     <section id="about">
@@ -71,6 +79,7 @@ function renderAbout(about){
         </div >    
     </section>`
 }
+*/
 
 /// needs fix... ///
 function multipleProfile(){
@@ -87,6 +96,7 @@ function multipleProfile(){
 }
 /// end fix... /// 
 
+/*
 function renderMaterialIcon(type){
     switch (type){
         case 'Paper':
@@ -99,7 +109,9 @@ function renderMaterialIcon(type){
             return '<i class="fas fa-link"></i>';
     }
 }
+*/
 
+/*
 function renderNews(news){
     return `
     <section id="news">
@@ -113,6 +125,9 @@ function renderNews(news){
     </section>
     `
 }
+*/
+
+/*
 function renderNewsItems(news){
     return news.slice(0,6).map(d=>`
         <div class="row">
@@ -125,7 +140,9 @@ function renderNewsItems(news){
         </div>
     `).join('');
 }
+*/
 
+/*
 function renderProjects(projects){
     return `
     <section id="projects">
@@ -153,7 +170,9 @@ function renderProjects(projects){
         </div>
     </section>`;
 }
+*/
 
+/*
 function renderProjectItems(projects){
     return projects.map(d=>`
         <div class="row">
@@ -191,7 +210,9 @@ function renderProjectItems(projects){
         </div>
     `).join('');
 }
+*/
 
+/*
 function addInteractions(){
     let newsSearch = document.querySelector('.search input[name="news"');
 
@@ -229,16 +250,18 @@ function addInteractions(){
     }));
     
 }
+*/
 
-
-
+/*
 function renderProjectPage(project){
     document.querySelector('.container').innerHTML = `
         ${renderNavbar('project')}
         ${renderProjectDetail(project)}
     `
 }
+*/
 
+/*
 function renderProjectDetail(d){
     return `
     <section>
@@ -276,3 +299,4 @@ function renderProjectDetail(d){
     </section>
     `
 }
+*/
